@@ -1,0 +1,13 @@
+ssh -i C:\Users\vivek\Downloads\pem.pem ec2-user@13.233.233.117
+
+sudo amazon-linux-extras enable ansible2
+sudo yum install ansible -y
+ansible --version
+
+sudo yum install docker -y
+sudo systemctl start docker
+sudo systemctl enable docker
+
+ansible-playbook setup.yml
+
+http://13.233.233.117
